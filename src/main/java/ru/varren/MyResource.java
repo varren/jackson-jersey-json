@@ -25,8 +25,13 @@ public class MyResource {
                 HashMap<String, String> branch = new HashMap<>();
                 // use comma as separator
                 String[] country = line.split(cvsSplitBy);
-                branch.put("key", country[0]);
-                branch.put("value", country[1]);
+                branch.put("Zone", country[0]);
+                branch.put("State", country[1]);
+                branch.put("City", country[2]);
+                branch.put("Location", country[3]);
+                branch.put("brach", country[4]);
+                branch.put("Employee", country[5]);
+                branch.put("EOP", country[6]);
                 branchList.add(branch);
             }
 
